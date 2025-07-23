@@ -1,4 +1,3 @@
-import React from "react";
 import bannerImg from "../assets/img/banner2.png";
 import "../main.css";
 
@@ -15,7 +14,7 @@ const Hero = () => {
                 </h2>
                 <p>Authentieke Syrische Fatayer & Specialiteiten in Den Haag</p>
 
-                <div className="d-flex justify-content-center mt-4" data-aos="fade-up" data-aos-delay="300">
+                <div className="d-flex justify-content-left mt-4 items-reverse" data-aos="fade-up" data-aos-delay="300">
                     <a
                         href="https://www.bistroo.nl/voorburg/restaurants/fatayer-time?utm_source=fatayer-time&utm_medium=bestelknop"
                         className="cta-btn"

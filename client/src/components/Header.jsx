@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Link as RouterLink } from "react-router-dom";
-import { Link as ScrollLink } from "react-scroll";
 import logo from "../assets/img/logo.png";
 
 const Header = () => {
@@ -60,12 +59,18 @@ const Header = () => {
                     </RouterLink>
 
                     {/* Fixed: Add mobile-nav-active class conditionally to navmenu */}
-                    <nav id="navmenu" className={`navmenu ${navOpen ? 'mobile-nav-active' : ''}`}>
-                        <ul>
-                            <li>
+                    <nav id="navmenu" className={`navmenu ${navOpen ? 'mobile-nav-active' : ''}`}
+                        
+                    >
+                        <ul className="h-100 items-center center">
+                            <li className="flex items-center content-center"
+                                
+                            >
+
                                 <button
                                     onClick={() => handleSmoothScroll('hero')}
                                     className="nav-link"
+                                    style={{ flexDirection: "column-reverse", alignItems: "center" }}
                                 >
                                     Home
                                 </button>
@@ -74,6 +79,7 @@ const Header = () => {
                                 <button
                                     onClick={() => handleSmoothScroll('about')}
                                     className="nav-link"
+                                    style={{ flexDirection: "column-reverse", alignItems: "center" }}
                                 >
                                     About
                                 </button>
@@ -82,6 +88,7 @@ const Header = () => {
                                 <button
                                     onClick={() => handleSmoothScroll('services')}
                                     className="nav-link"
+                                    style={{ flexDirection: "column-reverse", alignItems: "center" }}
                                 >
                                     Services
                                 </button>
@@ -90,6 +97,7 @@ const Header = () => {
                                 <button
                                     onClick={() => handleSmoothScroll('menu')}
                                     className="nav-link"
+                                    style={{ flexDirection: "column-reverse", alignItems: "center" }}
                                 >
                                     Menu
                                 </button>
@@ -98,6 +106,7 @@ const Header = () => {
                                 <button
                                     onClick={() => handleSmoothScroll('gallery')}
                                     className="nav-link"
+                                    style={{ flexDirection: "column-reverse", alignItems: "center" }}
                                 >
                                     Gallery
                                 </button>
@@ -106,6 +115,7 @@ const Header = () => {
                                 <button
                                     onClick={() => handleSmoothScroll('contact')}
                                     className="nav-link"
+                                    style={{ flexDirection: "column-reverse", alignItems: "center" }}
                                 >
                                     Contact
                                 </button>

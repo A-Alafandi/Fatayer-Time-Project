@@ -322,6 +322,7 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Added shadow for better visibility */
+    height: 360px !important;
   }
 
   /* Fixed: Show menu when mobile nav is active */
