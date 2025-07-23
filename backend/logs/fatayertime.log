@@ -1,0 +1,76 @@
+2025-07-23T21:56:57.328+02:00  INFO 2264 --- [backend] [restartedMain] c.f.backend.BackendApplication           : Starting BackendApplication using Java 21.0.7 with PID 2264 (D:\My projects\FatayerTime\backend\target\classes started by Abdul in D:\My projects\FatayerTime\backend)
+2025-07-23T21:56:57.333+02:00  INFO 2264 --- [backend] [restartedMain] c.f.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-07-23T21:56:57.363+02:00  INFO 2264 --- [backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-23T21:56:57.363+02:00  INFO 2264 --- [backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-23T21:56:58.034+02:00  INFO 2264 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-23T21:56:58.068+02:00  INFO 2264 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 28 ms. Found 2 JPA repository interfaces.
+2025-07-23T21:56:58.527+02:00  INFO 2264 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-23T21:56:58.535+02:00  INFO 2264 --- [backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-23T21:56:58.535+02:00  INFO 2264 --- [backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-07-23T21:56:58.572+02:00  INFO 2264 --- [backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-23T21:56:58.572+02:00  INFO 2264 --- [backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1208 ms
+2025-07-23T21:56:58.647+02:00  INFO 2264 --- [backend] [restartedMain] com.fatayertime.backend.config.JwtUtil   : ✅ JWT secret key initialized successfully
+2025-07-23T21:56:58.725+02:00  INFO 2264 --- [backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-23T21:56:58.769+02:00  INFO 2264 --- [backend] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-07-23T21:56:58.792+02:00  INFO 2264 --- [backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-23T21:56:58.966+02:00  INFO 2264 --- [backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-23T21:56:58.982+02:00  INFO 2264 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-23T21:56:59.074+02:00  INFO 2264 --- [backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@604ee5ef
+2025-07-23T21:56:59.076+02:00  INFO 2264 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-23T21:56:59.660+02:00  INFO 2264 --- [backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-23T21:56:59.720+02:00  INFO 2264 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-23T21:56:59.944+02:00  INFO 2264 --- [backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-07-23T21:57:00.189+02:00  INFO 2264 --- [backend] [restartedMain] c.fatayertime.backend.model.DataSeeder   : ℹ️ Menu already seeded. Skipping.
+2025-07-23T21:57:00.529+02:00  INFO 2264 --- [backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-23T21:57:00.851+02:00  INFO 2264 --- [backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-23T21:57:00.881+02:00  WARN 2264 --- [backend] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-07-23T21:57:00.883+02:00  INFO 2264 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-07-23T21:57:00.885+02:00  INFO 2264 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-07-23T21:57:00.887+02:00  INFO 2264 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-07-23T21:57:00.896+02:00  INFO 2264 --- [backend] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-07-23T21:57:00.906+02:00 ERROR 2264 --- [backend] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-07-23T21:58:49.685+02:00  INFO 10356 --- [backend] [restartedMain] c.f.backend.BackendApplication           : Starting BackendApplication using Java 21.0.7 with PID 10356 (D:\My projects\FatayerTime\backend\target\classes started by Abdul in D:\My projects\FatayerTime\backend)
+2025-07-23T21:58:49.690+02:00  INFO 10356 --- [backend] [restartedMain] c.f.backend.BackendApplication           : No active profile set, falling back to 1 default profile: "default"
+2025-07-23T21:58:49.714+02:00  INFO 10356 --- [backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-23T21:58:49.714+02:00  INFO 10356 --- [backend] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-23T21:58:50.240+02:00  INFO 10356 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-07-23T21:58:50.269+02:00  INFO 10356 --- [backend] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 2 JPA repository interfaces.
+2025-07-23T21:58:50.634+02:00  INFO 10356 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-23T21:58:50.644+02:00  INFO 10356 --- [backend] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-23T21:58:50.644+02:00  INFO 10356 --- [backend] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.28]
+2025-07-23T21:58:50.669+02:00  INFO 10356 --- [backend] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-23T21:58:50.670+02:00  INFO 10356 --- [backend] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 956 ms
+2025-07-23T21:58:50.739+02:00  INFO 10356 --- [backend] [restartedMain] com.fatayertime.backend.config.JwtUtil   : ✅ JWT secret key initialized successfully
+2025-07-23T21:58:50.806+02:00  INFO 10356 --- [backend] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-07-23T21:58:50.832+02:00  INFO 10356 --- [backend] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2025-07-23T21:58:50.847+02:00  INFO 10356 --- [backend] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-07-23T21:58:50.979+02:00  INFO 10356 --- [backend] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-07-23T21:58:50.991+02:00  INFO 10356 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-07-23T21:58:51.072+02:00  INFO 10356 --- [backend] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@15b21bba
+2025-07-23T21:58:51.073+02:00  INFO 10356 --- [backend] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-07-23T21:58:51.557+02:00  INFO 10356 --- [backend] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-07-23T21:58:51.599+02:00  INFO 10356 --- [backend] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-07-23T21:58:51.797+02:00  INFO 10356 --- [backend] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-07-23T21:58:52.016+02:00  INFO 10356 --- [backend] [restartedMain] c.fatayertime.backend.model.DataSeeder   : ℹ️ Menu already seeded. Skipping.
+2025-07-23T21:58:52.322+02:00  INFO 10356 --- [backend] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2025-07-23T21:58:52.617+02:00  INFO 10356 --- [backend] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-23T21:58:52.652+02:00  INFO 10356 --- [backend] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-07-23T21:58:52.658+02:00  INFO 10356 --- [backend] [restartedMain] c.f.backend.BackendApplication           : Started BackendApplication in 3.175 seconds (process running for 3.515)
+2025-07-23T21:58:52.993+02:00  INFO 10356 --- [backend] [RMI TCP Connection(4)-10.5.0.2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-23T21:58:52.993+02:00  INFO 10356 --- [backend] [RMI TCP Connection(4)-10.5.0.2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-07-23T21:58:52.994+02:00  INFO 10356 --- [backend] [RMI TCP Connection(4)-10.5.0.2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms

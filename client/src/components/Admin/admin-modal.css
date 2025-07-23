@@ -1,0 +1,271 @@
+/* Admin Item Modal Styles */
+.admin-item-modal {
+    max-width: 800px;
+    width: 95%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.admin-item-form {
+    padding: 0;
+}
+
+.admin-item-form .form-group {
+    margin-bottom: 1.5rem;
+}
+
+.admin-item-form label {
+    display: block;
+    color: var(--heading-color);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.admin-item-form .required {
+    color: var(--accent-color);
+    margin-left: 0.25rem;
+}
+
+.admin-item-form input,
+.admin-item-form textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 2px solid color-mix(in srgb, var(--default-color), transparent 80%);
+    border-radius: 8px;
+    background: var(--background-color);
+    color: var(--default-color);
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.admin-item-form input:focus,
+.admin-item-form textarea:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-color), transparent 90%);
+}
+
+.admin-item-form input.input-error,
+.admin-item-form textarea.input-error {
+    border-color: #dc3545;
+}
+
+.admin-item-form input::placeholder,
+.admin-item-form textarea::placeholder {
+    color: color-mix(in srgb, var(--default-color), transparent 50%);
+}
+
+.admin-item-form textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.field-error {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.form-text {
+    color: color-mix(in srgb, var(--default-color), transparent 40%);
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-bottom: 0 !important;
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    margin: 0;
+    cursor: pointer;
+}
+
+.modal-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.btn-cancel,
+.btn-save {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-cancel {
+    background: transparent;
+    color: var(--default-color);
+    border: 2px solid color-mix(in srgb, var(--default-color), transparent 70%);
+}
+
+.btn-cancel:hover:not(:disabled) {
+    background: color-mix(in srgb, var(--default-color), transparent 90%);
+    border-color: var(--default-color);
+}
+
+.btn-save {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+}
+
+.btn-save:hover:not(:disabled) {
+    background: color-mix(in srgb, var(--accent-color), transparent 20%);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(205, 164, 94, 0.3);
+}
+
+.btn-cancel:disabled,
+.btn-save:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+/* Add these styles to your main.css file */
+
+.ingredients-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ingredient-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.ingredient-input {
+    flex: 1;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.ingredient-input:focus {
+    outline: none;
+    border-color: var(--accent-color, #007bff);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.ingredient-input::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.ingredient-add-btn,
+.ingredient-remove-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.ingredient-add-btn {
+    background-color: var(--accent-color, #007bff);
+    color: white;
+}
+
+.ingredient-add-btn:hover {
+    background-color: var(--accent-color, #0056b3);
+    transform: scale(1.05);
+}
+
+.ingredient-remove-btn {
+    background-color: #dc3545;
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.ingredient-remove-btn:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+}
+
+.ingredient-add-btn:disabled,
+.ingredient-remove-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.ingredient-add-btn:disabled:hover,
+.ingredient-remove-btn:disabled:hover {
+    transform: none;
+    background-color: var(--accent-color, #007bff);
+}
+
+.ingredient-remove-btn:disabled:hover {
+    background-color: #dc3545;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .ingredient-row {
+        flex-wrap: wrap;
+    }
+
+    .ingredient-input {
+        min-width: 200px;
+    }
+}
+@media (max-width: 768px) {
+    .admin-item-modal {
+        width: 98%;
+        margin: 1rem;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .btn-cancel,
+    .btn-save {
+        width: 100%;
+        justify-content: center;
+    }
+}
