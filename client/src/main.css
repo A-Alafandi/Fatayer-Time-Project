@@ -1,4 +1,5 @@
 @import url("./components/Admin/admin-modal.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css");
 
 /*--------------------------------------------------------------
 # Font & Color Variables
@@ -433,7 +434,7 @@ h6 {
 
 .hero h2 {
   margin: 0;
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
 }
 
@@ -1532,6 +1533,31 @@ section,
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 45px;
+}
+
+.testimonials .swiper-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.testimonials .testimonial-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+  min-height: 500px;  /* Adjust as needed */
+  box-sizing: border-box;
+  background: transparent; /* optional: keep it clear */ /* Set your preferred card height */
+  min-width: 340px; /* Prevent extra skinny cards */
+  max-width: 410px; /* Optional: for a nice grid */
+}
+
+.testimonials .testimonial-item p {
+  flex: 1;
+  height: 400px;        /* Ensures same height for the text area */
+  max-height: 370px;    /* Match the value above */
+  overflow: auto;       /* Enables scroll for long reviews */
+  margin-bottom: 20px;  /* Space for avatar below */
 }
 
 .testimonials .testimonial-item h4 {
